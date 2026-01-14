@@ -202,49 +202,34 @@ function App() {
               Get in Touch
             </button>
           </div>
-          {/* <div className="hero-stats">
-            <img src="/SolarFront.png" alt="Griha Solar" />
-
-            <div className="stat-item">
-              <div className="stat-number">₹30K<span>+</span></div>
-              <div className="stat-label">Annual Savings</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">4-5<span>Yr</span></div>
-              <div className="stat-label">Breakeven</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number zero-highlight">ZERO</div>
-              <div className="stat-label">Bills for 25 Years</div>
-            </div>
-          </div> */}
         </div>
       </section>
 
-      {/* USP Section */}
+      {/* Benefits of Rooftop Solar Section */}
       <section className="usp">
         <div className="container">
+          <h2>Benefits of Rooftop Solar</h2>
           <div className="usp-grid">
             <div className="usp-card">
               <div className="usp-icon">
                 <StarIcon />
               </div>
-              <h4>High Quality Materials</h4>
-              <p>Premium panels and components for maximum efficiency and longevity</p>
+              <h4>₹30,000 Annual Savings</h4>
+              <p>On average, households can save ₹30,000 annually on electricity bills with a solar system.</p>
             </div>
             <div className="usp-card">
               <div className="usp-icon">
                 <StarIcon />
               </div>
-              <h4>Hassle-Free Installation</h4>
-              <p>Same day installation with trained technicians and zero disruption</p>
+              <h4>Breakeven 5 Years</h4>
+              <p>With PM Surya Ghar subsidy, most households will break even in their investment in 5 years</p>
             </div>
             <div className="usp-card">
               <div className="usp-icon">
                 <StarIcon />
               </div>
-              <h4>Long-term O&M + Cleaning</h4>
-              <p>Scheduled maintenance and cleaning to ensure peak performance always</p>
+              <h4>25 Years Free Electricity</h4>
+              <p>After the breakeven period, households get free electricity for 20+ years.</p>
             </div>
           </div>
         </div>
@@ -257,6 +242,35 @@ function App() {
             <h2>The Griha Solar <span>Journey</span></h2>
             <p>From decision to lifetime performance – we're with you every step of the way</p>
           </div>
+
+          {/* USP Section */}
+          <section className="usp">
+            <div className="container">
+              <div className="usp-grid">
+                <div className="usp-card">
+                  <div className="usp-icon">
+                    <StarIcon />
+                  </div>
+                  <h4>High Quality Materials</h4>
+                  <p>Premium panels and components for maximum efficiency and longevity</p>
+                </div>
+                <div className="usp-card">
+                  <div className="usp-icon">
+                    <StarIcon />
+                  </div>
+                  <h4>Hassle-Free Installation</h4>
+                  <p>Same day installation with trained technicians and zero disruption</p>
+                </div>
+                <div className="usp-card">
+                  <div className="usp-icon">
+                    <StarIcon />
+                  </div>
+                  <h4>Long-term O&M + Cleaning</h4>
+                  <p>Scheduled maintenance and cleaning to ensure peak performance always</p>
+                </div>
+              </div>
+            </div>
+          </section>
           
           {/* Step 1: Before Installation */}
           <div className="journey-step">
