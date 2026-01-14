@@ -102,7 +102,7 @@
   align-items: center;
   padding-top: 80px;
 
-  background-image: url("/hero-bg.png");
+  background-image: url("/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -183,7 +183,7 @@
 
 .hero-description {
   font-size: 1.15rem;
-  color: var(--gray-600);
+  color: var(--white);
   margin-bottom: 32px;
   line-height: 1.7;
 }
