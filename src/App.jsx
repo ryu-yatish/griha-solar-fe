@@ -192,16 +192,11 @@ function App() {
       <section className="hero" id="home">
         <div className="container">
           <div className="hero-content">
-            <div className="hero-badge">
-              <SunIcon />
-              <span>Your Consumer Energy Partner</span>
-            </div>
             <h1>
-              Own Your <span>Rooftop Solar Journey</span>
+              Reduce your electricity bills to <span>ZERO!</span>
             </h1>
             <p className="hero-description">
-              <strong>Griha Solar</strong> is a <em>consumer energy</em> brand that owns the homeowner's 
-              entire rooftop solar journey. <strong>From decision to lifetime performance.</strong>
+              <strong>Griha Solar</strong> helps you throughout the process of installing rooftop solar and <strong>guarantees long-term performance</strong>
             </p>
             <div className="hero-stats">
               <div className="stat-item">
