@@ -198,34 +198,26 @@ function App() {
             <p className="hero-description">
               <strong>Griha Solar</strong> helps you throughout the process of installing rooftop solar and <strong>guarantees long-term performance</strong>
             </p>
-            <div className="hero-stats">
-              <div className="stat-item">
-                <div className="stat-number">₹30K<span>+</span></div>
-                <div className="stat-label">Annual Savings</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number">4-5<span>Yr</span></div>
-                <div className="stat-label">Breakeven</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number zero-highlight">ZERO</div>
-                <div className="stat-label">Bills for 25 Years</div>
-              </div>
-            </div>
-          </div>
-          <div className="hero-cta-card" id="contact">
-            <div className="hero-cta-icon">
-              <SunIcon />
-            </div>
-            <h3>Ready to Go Solar?</h3>
-            <p>Get a free consultation with our solar experts</p>
             <button onClick={openContactPopup} className="btn btn-secondary btn-large">
               Get in Touch
             </button>
-            <div className="hero-cta-note">
-              <span>📞 We respond within 24 hours</span>
-            </div>
           </div>
+          {/* <div className="hero-stats">
+            <img src="/SolarFront.png" alt="Griha Solar" />
+
+            <div className="stat-item">
+              <div className="stat-number">₹30K<span>+</span></div>
+              <div className="stat-label">Annual Savings</div>
+            </div>
+            <div className="stat-item">
+              <div className="stat-number">4-5<span>Yr</span></div>
+              <div className="stat-label">Breakeven</div>
+            </div>
+            <div className="stat-item">
+              <div className="stat-number zero-highlight">ZERO</div>
+              <div className="stat-label">Bills for 25 Years</div>
+            </div>
+          </div> */}
         </div>
       </section>
 

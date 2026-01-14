@@ -101,11 +101,11 @@
   display: flex;
   align-items: center;
   padding-top: 80px;
-  background: 
-    linear-gradient(135deg, rgba(46, 123, 196, 0.03) 0%, rgba(247, 147, 30, 0.03) 100%),
-    radial-gradient(ellipse at 20% 50%, rgba(57, 181, 74, 0.08) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 80%, rgba(247, 147, 30, 0.08) 0%, transparent 50%),
-    var(--white);
+
+  background-image: url("/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
