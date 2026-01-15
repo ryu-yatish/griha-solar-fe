@@ -843,7 +843,7 @@
 
 /* ===== FAQ SECTION ===== */
 .faq {
-  padding: 2px 0;
+  padding: 2px 0 50px;
   background: var(--white);
 }
 
