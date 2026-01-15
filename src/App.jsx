@@ -8,49 +8,46 @@ const PhoneIcon = () => (
   </svg>
 )
 
-const SunIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="12" cy="12" r="5"/>
-    <line x1="12" y1="1" x2="12" y2="3"/>
-    <line x1="12" y1="21" x2="12" y2="23"/>
-    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-    <line x1="1" y1="12" x2="3" y2="12"/>
-    <line x1="21" y1="12" x2="23" y2="12"/>
-    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-  </svg>
-)
-
+// 1. Single Point of Contact
 const HeadphonesIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
-    <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+    <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
   </svg>
-)
+);
 
+// 2. Savings & Subsidy Guidance (Matching the checkmark in your screenshot)
+const SavingsIcon = () => (
+  <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M8 7V6a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1M3 18v-7a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Zm8-3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
+  </svg>
+
+);
+
+// 3. Roof Survey & 3D Modelling
 const RoofIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-    <polyline points="9 22 9 12 15 12 15 22"/>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+    <polyline points="9 22 9 12 15 12 15 22" />
   </svg>
-)
+);
 
-const ClipboardIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
-    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
-    <path d="M9 14l2 2 4-4"/>
+// 4. Custom System Design (Matching the checkmark in your screenshot)
+const DesignIcon = () => (
+  <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 9h6m-6 3h6m-6 3h6M6.996 9h.01m-.01 3h.01m-.01 3h.01M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/>
+  </svg>
+);
+
+const QualityIcon = () => (
+  <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8.032 12 1.984 1.984 4.96-4.96m4.55 5.272.893-.893a1.984 1.984 0 0 0 0-2.806l-.893-.893a1.984 1.984 0 0 1-.581-1.403V7.04a1.984 1.984 0 0 0-1.984-1.984h-1.262a1.983 1.983 0 0 1-1.403-.581l-.893-.893a1.984 1.984 0 0 0-2.806 0l-.893.893a1.984 1.984 0 0 1-1.403.581H7.04A1.984 1.984 0 0 0 5.055 7.04v1.262c0 .527-.209 1.031-.581 1.403l-.893.893a1.984 1.984 0 0 0 0 2.806l.893.893c.372.372.581.876.581 1.403v1.262a1.984 1.984 0 0 0 1.984 1.984h1.262c.527 0 1.031.209 1.403.581l.893.893a1.984 1.984 0 0 0 2.806 0l.893-.893a1.985 1.985 0 0 1 1.403-.581h1.262a1.984 1.984 0 0 0 1.984-1.984V15.7c0-.527.209-1.031.581-1.403Z"/>
   </svg>
 )
 
 const InstallIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <rect x="2" y="6" width="20" height="12" rx="2"/>
-    <line x1="6" y1="10" x2="6" y2="14"/>
-    <line x1="10" y1="10" x2="10" y2="14"/>
-    <line x1="14" y1="10" x2="14" y2="14"/>
-    <line x1="18" y1="10" x2="18" y2="14"/>
+  <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h6l2 4m-8-4v8H9m4-8V6c0-.26522-.1054-.51957-.2929-.70711C12.5196 5.10536 12.2652 5 12 5H4c-.26522 0-.51957.10536-.70711.29289C3.10536 5.48043 3 5.73478 3 6v9h2m14 0h2v-4m0 0h-5M8 8.66669V10l1.5 1.5m10 5c0 1.3807-1.1193 2.5-2.5 2.5s-2.5-1.1193-2.5-2.5S15.6193 14 17 14s2.5 1.1193 2.5 2.5Zm-10 0C9.5 17.8807 8.38071 19 7 19s-2.5-1.1193-2.5-2.5S5.61929 14 7 14s2.5 1.1193 2.5 2.5Z"/>
   </svg>
 )
 
@@ -72,6 +69,24 @@ const ChartIcon = () => (
 const CheckIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
     <polyline points="20 6 9 17 4 12"/>
+  </svg>
+)
+
+const CleanIcon = () => (
+  <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3M3.22302 14C4.13247 18.008 7.71683 21 12 21c4.9706 0 9-4.0294 9-9 0-4.97056-4.0294-9-9-9-3.72916 0-6.92858 2.26806-8.29409 5.5M7 9H3V5"/>
+  </svg>
+)
+
+const PerformanceIcon = () => (
+  <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 1 1 0-18c1.052 0 2.062.18 3 .512M7 9.577l3.923 3.923 8.5-8.5M17 14v6m-3-3h6"/>
+  </svg>
+)
+
+const ToolsIcon = () => (
+  <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.6144 7.19994c.3479.48981.5999 1.15357.5999 1.80006 0 1.6569-1.3432 3-3 3-1.6569 0-3.00004-1.3431-3.00004-3 0-.67539.22319-1.29865.59983-1.80006M6.21426 6v4m0-4 6.00004-3 6 3-6 2-2.40021-.80006M6.21426 6l3.59983 1.19994M6.21426 19.8013v-2.1525c0-1.6825 1.27251-3.3075 2.95093-3.6488l3.04911 2.9345 3-2.9441c1.7026.3193 3 1.9596 3 3.6584v2.1525c0 .6312-.5373 1.1429-1.2 1.1429H7.41426c-.66274 0-1.2-.5117-1.2-1.1429Z"/>
   </svg>
 )
 
@@ -103,15 +118,10 @@ const UserIcon = () => (
   </svg>
 )
 
-const StarIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="1">
-    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-  </svg>
-)
-
 function App() {
   const [activeQuestion, setActiveQuestion] = useState(null)
   const [showContactPopup, setShowContactPopup] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const toggleQuestion = (index) => {
     setActiveQuestion(activeQuestion === index ? null : index)
@@ -178,13 +188,28 @@ function App() {
       <nav className="navbar">
         <div className="container">
           <img src="/logo.jpeg" alt="Griha Solar" className="navbar-logo" />
-          <div className="navbar-cta">
-            <a href="tel:9981394554" className="navbar-phone">
-              <PhoneIcon />
-              <span>9981394554</span>
-            </a>
-            <button onClick={openContactPopup} className="btn btn-primary">Get Free Quote</button>
+          <div className="navbar-right">
+            <ul className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
+              <li><a href="#benefits">Benefits</a></li>
+              <li><a href="#journey">Our Approach</a></li>
+              <li><a href="#faq">FAQs</a></li>
+              <li>
+                <button onClick={openContactPopup} className="btn btn-primary nav-cta">
+                  Book FREE Consultation
+                </button>
+              </li>
+            </ul>
+
+            <button
+              className="hamburger"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              <span />
+              <span />
+              <span />
+            </button>
           </div>
+
         </div>
       </nav>
 
@@ -198,36 +223,56 @@ function App() {
             <p className="hero-description">
               <strong>Griha Solar</strong> helps you throughout the process of installing rooftop solar and <strong>guarantees long-term performance</strong>
             </p>
-            <button onClick={openContactPopup} className="btn btn-secondary btn-large">
-              Get in Touch
+            <button onClick={openContactPopup} className="btn-consultation btn btn-secondary btn-large">
+              <span className="btn-icon">
+                <img src="/calendar-icon.png" alt="Calendar" />
+              </span>
+              <span className="btn-text">
+                Book FREE consultation
+              </span>
             </button>
           </div>
         </div>
       </section>
 
       {/* Benefits of Rooftop Solar Section */}
-      <section className="usp">
+      <section className="usp" id="benefits">
         <div className="container">
-          <h2>Benefits of Rooftop Solar</h2>
+          <div className="section-header">
+            <h2>Benefits of <span>Rooftop Solar</span></h2>
+            <p>Adopting solar is not only the greener choice, it is also a no-brainer economically.</p>
+          </div>
           <div className="usp-grid">
             <div className="usp-card">
-              <div className="usp-icon">
-                <StarIcon />
-              </div>
+              <img
+                src="/annual-savings-icon.png"
+                alt="Annual Savings"
+                className="usp-icon-image"
+                width={110}
+                height={110}
+              />
               <h4>₹30,000 Annual Savings</h4>
-              <p>On average, households can save ₹30,000 annually on electricity bills with a solar system.</p>
+              <p>On average, households can save ₹30,000 annually on electricity bills with a rooftop solar system.</p>
             </div>
             <div className="usp-card">
-              <div className="usp-icon">
-                <StarIcon />
-              </div>
-              <h4>Breakeven 5 Years</h4>
-              <p>With PM Surya Ghar subsidy, most households will break even in their investment in 5 years</p>
+              <img
+                src="/breakeven-period-icon.png"
+                alt="Breakeven Period"
+                className="usp-icon-image"
+                width={110}
+                height={110}
+              />
+              <h4>Breakeven in 5 Years</h4>
+              <p>With <b>PM Surya Ghar subsidy</b>, most households will break even in their investment in 5 years</p>
             </div>
             <div className="usp-card">
-              <div className="usp-icon">
-                <StarIcon />
-              </div>
+              <img
+                src="/free-electricity-icon.png"
+                alt="Free Electricity"
+                className="usp-icon-image"
+                width={110}
+                height={110}
+              />
               <h4>25 Years Free Electricity</h4>
               <p>After the breakeven period, households get free electricity for 20+ years.</p>
             </div>
@@ -248,25 +293,37 @@ function App() {
             <div className="container">
               <div className="usp-grid">
                 <div className="usp-card">
-                  <div className="usp-icon">
-                    <StarIcon />
-                  </div>
+                  <img
+                    src="/high-quality-icon.png"
+                    alt="High Quality"
+                    className="usp-icon-image"
+                    width={110}
+                    height={110}
+                  />
                   <h4>High Quality Materials</h4>
                   <p>Premium panels and components for maximum efficiency and longevity</p>
                 </div>
                 <div className="usp-card">
-                  <div className="usp-icon">
-                    <StarIcon />
-                  </div>
+                  <img
+                    src="/hassle-free-icon.png"
+                    alt="Hassle-Free Installation"
+                    className="usp-icon-image"
+                    width={110}
+                    height={110}
+                  />
                   <h4>Hassle-Free Installation</h4>
                   <p>Same day installation with trained technicians and zero disruption</p>
                 </div>
                 <div className="usp-card">
-                  <div className="usp-icon">
-                    <StarIcon />
-                  </div>
-                  <h4>Long-term O&M + Cleaning</h4>
-                  <p>Scheduled maintenance and cleaning to ensure peak performance always</p>
+                  <img
+                    src="/long-term-performance-icon.png"
+                    alt="Long-term Performance"
+                    className="usp-icon-image"
+                    width={110}
+                    height={110}
+                  />
+                  <h4>Long-term Performance</h4>
+                  <p>Scheduled cleaning & maintenance to ensure long-term performance</p>
                 </div>
               </div>
             </div>
@@ -291,7 +348,7 @@ function App() {
                     <span>Single Point of Contact</span>
                   </div>
                   <div className="step-feature">
-                    <span className="feature-icon blue"><CheckIcon /></span>
+                    <span className="feature-icon blue"><SavingsIcon /></span>
                     <span>Savings & Subsidy Guidance</span>
                   </div>
                   <div className="step-feature">
@@ -299,7 +356,7 @@ function App() {
                     <span>Roof Survey & 3D Modelling</span>
                   </div>
                   <div className="step-feature">
-                    <span className="feature-icon blue"><CheckIcon /></span>
+                    <span className="feature-icon blue"><DesignIcon /></span>
                     <span>Custom System Design</span>
                   </div>
                 </div>
@@ -322,20 +379,20 @@ function App() {
               <div className="step-right">
                 <div className="step-features">
                   <div className="step-feature">
-                    <span className="feature-icon green"><ClipboardIcon /></span>
-                    <span>Net-metering & Approvals</span>
+                    <span className="feature-icon green"><CheckIcon /></span>
+                    <span>Approvals & Net-metering</span>
                   </div>
                   <div className="step-feature">
-                    <span className="feature-icon green"><CheckIcon /></span>
-                    <span>Subsidy & Financing Help</span>
+                    <span className="feature-icon green"><QualityIcon /></span>
+                    <span>High Quality Materials</span>
+                  </div>
+                  <div className="step-feature">
+                    <span className="feature-icon green"><ToolsIcon /></span>
+                    <span>Trained Technicians</span>
                   </div>
                   <div className="step-feature">
                     <span className="feature-icon green"><InstallIcon /></span>
-                    <span>Single Day Installation</span>
-                  </div>
-                  <div className="step-feature">
-                    <span className="feature-icon green"><CheckIcon /></span>
-                    <span>System Commissioning</span>
+                    <span>One Day Installation</span>
                   </div>
                 </div>
               </div>
@@ -361,7 +418,7 @@ function App() {
                     <span>Remote Performance Monitoring</span>
                   </div>
                   <div className="step-feature">
-                    <span className="feature-icon orange"><CheckIcon /></span>
+                    <span className="feature-icon orange"><CleanIcon /></span>
                     <span>Scheduled Panel Cleaning</span>
                   </div>
                   <div className="step-feature">
@@ -369,7 +426,7 @@ function App() {
                     <span>Claims & Support</span>
                   </div>
                   <div className="step-feature">
-                    <span className="feature-icon orange"><CheckIcon /></span>
+                    <span className="feature-icon orange"><PerformanceIcon /></span>
                     <span>Output Guaranteed</span>
                   </div>
                 </div>

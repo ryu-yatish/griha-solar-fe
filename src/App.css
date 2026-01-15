@@ -28,11 +28,34 @@
   height: 56px;
 }
 
-.navbar-cta {
+.navbar-right {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
 }
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: var(--gray-700);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.navbar-links a:hover {
+  color: var(--orange);
+}
+
+.nav-cta {
+  padding: 10px 16px;
+}
+
 
 .navbar-phone {
   display: flex;
@@ -46,6 +69,47 @@
 .navbar-phone svg {
   color: var(--green);
 }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background: #0f172a;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 64px;
+    right: 16px;
+    background: white;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: none;
+    z-index: 1001;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+}
+
+
 
 .btn {
   display: inline-flex;
@@ -186,6 +250,62 @@
   color: var(--white);
   margin-bottom: 32px;
   line-height: 1.7;
+}
+
+.btn-consultation {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 16px 26px;
+  border-radius: 14px;
+
+  background: linear-gradient(180deg, #3b82f6, #2563eb);
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+
+  border: none;
+  cursor: pointer;
+
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+  transition: all 0.2s ease;
+}
+
+.btn-consultation:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.35);
+}
+
+.btn-consultation:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.25);
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 22px;
+  height: 22px;
+
+  font-size: 18px;
+  line-height: 1;
+}
+
+.btn-text {
+  white-space: nowrap;
+}
+
+.btn-icon img {
+  width: 28px;
+  height: 28px;
+
+  /* force icon to white */
+  filter: brightness(0) invert(1);
 }
 
 .hero-cta-card {
