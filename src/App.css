@@ -24,6 +24,55 @@
   align-items: center;
 }
 
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-logo-icon {
+  width: 45px;
+  height: auto;
+}
+
+.navbar-logo-text {
+  width: 230px;          /* slightly smaller than before */
+  height: auto;
+  padding-left: 25px;    /* 👈 left padding */
+  margin-top: 6px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: fixed;
+  }
+
+  .navbar .container {
+    position: relative;
+  }
+
+  /* Left: logo icon */
+  .navbar-logo-icon {
+    width: 35px;
+  }
+
+  /* Centre: GRIHA SOLAR text */
+  .navbar-logo-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    margin-top: 4px;
+    padding-left: 0;
+  }
+
+  /* Right: hamburger */
+  .navbar-right {
+    margin-left: auto;
+  }
+}
+
+
 .navbar-logo {
   height: 56px;
 }
@@ -260,7 +309,7 @@
   padding: 16px 26px;
   border-radius: 14px;
 
-  background: linear-gradient(180deg, #3b82f6, #2563eb);
+  background: linear-gradient(135deg, var(--orange) 0%, var(--orange-dark) 100%);
   color: #ffffff;
 
   font-size: 16px;
@@ -450,6 +499,14 @@
   color: var(--gray-600);
   line-height: 1.5;
 }
+
+/* Hide description on mobile */
+@media (max-width: 768px) {
+  .usp-description {
+    display: none;
+  }
+}
+
 
 /* ===== JOURNEY SECTION ===== */
 .journey {
@@ -1296,12 +1353,30 @@
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .hero .container {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .hero h1 {
     font-size: 2.75rem;
+    text-align: center;
+  }
+
+  .hero-description {
+    text-align: center;
+  }
+
+  .btn-consultation {
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .hero-cta-card {
