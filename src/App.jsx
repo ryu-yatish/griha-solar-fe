@@ -209,8 +209,10 @@ function App() {
               <li><a href="#journey">Our Approach</a></li>
               <li><a href="#faq">FAQs</a></li>
               <li>
-                <button onClick={openContactPopup} className="btn btn-primary nav-cta">
-                  Book FREE Consultation
+                <button onClick={openContactPopup} className="btn-consultation btn btn-secondary btn-large">
+                  <span className="btn-text">
+                    Book FREE consultation
+                  </span>
                 </button>
               </li>
             </ul>
