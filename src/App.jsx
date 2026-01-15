@@ -549,7 +549,7 @@ function App() {
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2026 Griha Solar. All rights reserved.</p>
+            <p>&copy; 2026 Griha Solar Private Limited. All rights reserved.</p>
             {/* <div className="footer-social">
               <a href="#" aria-label="Facebook">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
