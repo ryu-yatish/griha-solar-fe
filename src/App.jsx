@@ -532,7 +532,7 @@ function App() {
               <h4>Contact Us</h4>
               <div className="footer-contact-item">
                 <UserIcon />
-                <span>Dipak Agrawal</span>
+                <a href="https://www.linkedin.com/in/dipakda/">Dipak Agrawal</a>
               </div>
               <div className="footer-contact-item">
                 <PhoneIcon />
@@ -598,13 +598,13 @@ function App() {
                   <p>Talk to Dipak Agrawal directly</p>
                 </div>
               </a>
-              <a href="mailto:contact@grihasolar.com" className="popup-option popup-option-email">
+              <a href="mailto:dipak19da@gmail.com" className="popup-option popup-option-email">
                 <div className="popup-option-icon">
                   <MailIcon />
                 </div>
                 <div className="popup-option-content">
                   <h4>Email Us</h4>
-                  <span>contact@grihasolar.com</span>
+                  <span>dipak19da@gmail.com</span>
                   <p>We'll respond within 24 hours</p>
                 </div>
               </a>
