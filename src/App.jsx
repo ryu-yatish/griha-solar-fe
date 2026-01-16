@@ -90,6 +90,15 @@ const ToolsIcon = () => (
   </svg>
 )
 
+const MountIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M2 20h20"/>
+    <path d="M5 20v-4l3-6h8l3 6v4"/>
+    <path d="M8 10V6l4-3 4 3v4"/>
+    <rect x="9" y="6" width="6" height="4" rx="0.5"/>
+  </svg>
+)
+
 const PlusIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <line x1="12" y1="5" x2="12" y2="19"/>
@@ -260,7 +269,7 @@ function App() {
             <p>Adopting solar is not only the greener choice, it is also a no-brainer economically.</p>
           </div>
           <div className="usp-grid">
-            <div className="usp-card">
+            <div className="usp-card" tabIndex="0" onMouseDown={(e) => { if (document.activeElement === e.currentTarget) { e.preventDefault(); e.currentTarget.blur(); } }}>
               <img
                 src="/annual-savings-icon.png"
                 alt="Annual Savings"
@@ -271,7 +280,7 @@ function App() {
               <h4>₹30,000 Annual Savings</h4>
               <p className="usp-description">On average, households can save ₹30,000 annually on electricity bills with a rooftop solar system.</p>
             </div>
-            <div className="usp-card">
+            <div className="usp-card" tabIndex="0" onMouseDown={(e) => { if (document.activeElement === e.currentTarget) { e.preventDefault(); e.currentTarget.blur(); } }}>
               <img
                 src="/breakeven-period-icon.png"
                 alt="Breakeven Period"
@@ -282,7 +291,7 @@ function App() {
               <h4>Breakeven in 5 Years</h4>
               <p className="usp-description">With <b>PM Surya Ghar subsidy</b>, most households will break even in their investment in 5 years</p>
             </div>
-            <div className="usp-card">
+            <div className="usp-card" tabIndex="0" onMouseDown={(e) => { if (document.activeElement === e.currentTarget) { e.preventDefault(); e.currentTarget.blur(); } }}>
               <img
                 src="/free-electricity-icon.png"
                 alt="Free Electricity"
@@ -309,7 +318,7 @@ function App() {
           <section className="usp">
             <div className="container">
               <div className="usp-grid">
-                <div className="usp-card">
+                <div className="usp-card" tabIndex="0" onMouseDown={(e) => { if (document.activeElement === e.currentTarget) { e.preventDefault(); e.currentTarget.blur(); } }}>
                   <img
                     src="/high-quality-icon.png"
                     alt="High Quality"
@@ -320,7 +329,7 @@ function App() {
                   <h4>High Quality Materials</h4>
                   <p className="usp-description">Premium panels and components for maximum efficiency and longevity</p>
                 </div>
-                <div className="usp-card">
+                <div className="usp-card" tabIndex="0" onMouseDown={(e) => { if (document.activeElement === e.currentTarget) { e.preventDefault(); e.currentTarget.blur(); } }}>
                   <img
                     src="/hassle-free-icon.png"
                     alt="Hassle-Free Installation"
@@ -331,7 +340,7 @@ function App() {
                   <h4>Hassle-Free Installation</h4>
                   <p className="usp-description">Same day installation with trained technicians and zero disruption</p>
                 </div>
-                <div className="usp-card">
+                <div className="usp-card" tabIndex="0" onMouseDown={(e) => { if (document.activeElement === e.currentTarget) { e.preventDefault(); e.currentTarget.blur(); } }}>
                   <img
                     src="/long-term-performance-icon.png"
                     alt="Long-term Performance"
@@ -346,19 +355,29 @@ function App() {
             </div>
           </section>
           
-          {/* Step 1: Before Installation */}
-          <div className="journey-step">
-            <div className="step-badge blue">01</div>
-            <div className="step-content">
-              <div className="step-left">
+          {/* Journey Steps Grid */}
+          <div className="journey-steps-grid">
+            {/* Step 1: Before Installation */}
+            <div 
+              className="journey-step-card blue" 
+              tabIndex="0"
+              onMouseDown={(e) => {
+                if (document.activeElement === e.currentTarget) {
+                  e.preventDefault();
+                  e.currentTarget.blur();
+                }
+              }}
+            >
+              <div className="step-header">
+                <span className="step-number blue">01</span>
                 <h3>Before Installation</h3>
-                <p className="step-tagline">Clarity & Trust</p>
+              </div>
+              <p className="step-tagline">Clarity & Trust</p>
+              <div className="step-details">
                 <p className="step-description">
                   Get expert guidance from our solar advisors. We analyze your needs, 
                   survey your roof, and design the perfect system for your home.
                 </p>
-              </div>
-              <div className="step-right">
                 <div className="step-features">
                   <div className="step-feature">
                     <span className="feature-icon blue"><HeadphonesIcon /></span>
@@ -379,29 +398,36 @@ function App() {
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Step 2: Installation */}
-          <div className="journey-step">
-            <div className="step-badge green">02</div>
-            <div className="step-content">
-              <div className="step-left">
+            {/* Step 2: Installation */}
+            <div 
+              className="journey-step-card green" 
+              tabIndex="0"
+              onMouseDown={(e) => {
+                if (document.activeElement === e.currentTarget) {
+                  e.preventDefault();
+                  e.currentTarget.blur();
+                }
+              }}
+            >
+              <div className="step-header">
+                <span className="step-number green">02</span>
                 <h3>Installation</h3>
-                <p className="step-tagline">Hassle-free</p>
+              </div>
+              <p className="step-tagline">Hassle-free</p>
+              <div className="step-details">
                 <p className="step-description">
                   We handle all approvals, paperwork, and installation. Trained technicians 
                   complete the setup in a single day with zero hassle for you.
                 </p>
-              </div>
-              <div className="step-right">
                 <div className="step-features">
                   <div className="step-feature">
                     <span className="feature-icon green"><CheckIcon /></span>
                     <span>Approvals & Net-metering</span>
                   </div>
                   <div className="step-feature">
-                    <span className="feature-icon green"><QualityIcon /></span>
-                    <span>High Quality Materials</span>
+                    <span className="feature-icon green"><MountIcon /></span>
+                    <span>Tailor-made Mounts</span>
                   </div>
                   <div className="step-feature">
                     <span className="feature-icon green"><ToolsIcon /></span>
@@ -414,21 +440,28 @@ function App() {
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Step 3: After Installation */}
-          <div className="journey-step">
-            <div className="step-badge orange">03</div>
-            <div className="step-content">
-              <div className="step-left">
+            {/* Step 3: After Installation */}
+            <div 
+              className="journey-step-card orange" 
+              tabIndex="0"
+              onMouseDown={(e) => {
+                if (document.activeElement === e.currentTarget) {
+                  e.preventDefault();
+                  e.currentTarget.blur();
+                }
+              }}
+            >
+              <div className="step-header">
+                <span className="step-number orange">03</span>
                 <h3>After Installation</h3>
-                <p className="step-tagline">Peace of Mind</p>
+              </div>
+              <p className="step-tagline">Peace of Mind</p>
+              <div className="step-details">
                 <p className="step-description">
                   Enjoy worry-free solar with remote monitoring, scheduled cleaning, 
                   and guaranteed performance. We're with you for the long run.
                 </p>
-              </div>
-              <div className="step-right">
                 <div className="step-features">
                   <div className="step-feature">
                     <span className="feature-icon orange"><ChartIcon /></span>
