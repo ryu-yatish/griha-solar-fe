@@ -1606,6 +1606,9 @@
   /* Mobile section spacing */
   .usp {
     padding: 40px 0;
+    background: var(--white);
+    border-top: none;
+    border-bottom: none;
   }
 
   .journey {
