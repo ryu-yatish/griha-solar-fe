@@ -575,7 +575,7 @@ function App() {
               </div>
               <div className="footer-contact-item">
                 <MailIcon />
-                <a href="mailto:dipak19da@gmail.com">dipak19da@gmail.com</a>
+                <a href="mailto:dipak@grihasolar.in">dipak@grihasolar.in</a>
               </div>
               <div className="footer-contact-item">
                 <LocationIcon />
@@ -633,13 +633,13 @@ function App() {
                   <p>Talk to Dipak Agrawal directly</p>
                 </div>
               </a>
-              <a href="mailto:dipak19da@gmail.com" className="popup-option popup-option-email">
+              <a href="mailto:dipak@grihasolar.in" className="popup-option popup-option-email">
                 <div className="popup-option-icon">
                   <MailIcon />
                 </div>
                 <div className="popup-option-content">
                   <h4>Email Us</h4>
-                  <span>dipak19da@gmail.com</span>
+                  <span>dipak@grihasolar.in</span>
                   <p>We'll respond within 24 hours</p>
                 </div>
               </a>
