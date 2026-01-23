@@ -146,8 +146,8 @@ function App() {
 
   const faqs = [
     {
-      question: "How much electricity do you consume?",
-      answer: "A typical household consumes about 3-4.5 units per day on average. That amounts to about ₹2,000/month in electricity bills. The amount varies based on the state you live in as electricity rates are decided by the state government. The state also gives subsidy on electricity consumption and hence electricity bills can vary."
+      question: "How much electricity do I normally consume?",
+      answer: "A typical household consumes about 6-8 units per day on average. That amounts to about ₹2,000/month in electricity bills on average. The amount varies based on the state you live in as electricity rates are decided by the state government. The state also gives subsidy on electricity consumption and hence electricity bills can vary."
     },
     {
       question: "Is rooftop solar suitable for my home?",
@@ -158,8 +158,8 @@ function App() {
       answer: "A professionally installed system does not damage the roof, can actually improve resale value, and has potential to achieve higher rental yields. Poor installations, however, can cause leakage or clutter. Installer quality matters more than panel brand."
     },
     {
-      question: "Do I need a battery?",
-      answer: "In most urban homes, no. Grid-connected rooftop solar works without batteries by using net metering. Solar Rooftop systems produce electricity during the day, typically excess of usage. The additional production is available as credits which offset night time consumption from the grid. Most people who install grid-connected rooftop systems see ZERO electricity bills, excluding fixed charges."
+      question: "Do I need a battery or inverter?",
+      answer: "In most urban homes, no you do not require a battery storage solution. Grid-connected rooftop solar works without batteries by using net metering. Solar Rooftop systems produce electricity during the day, typically excess of usage. The additional production is available as credits which offset night time consumption from the grid. Most people who install grid-connected rooftop systems see ZERO electricity bills, excluding fixed charges."
     },
     {
       question: "If electricity goes, why doesn't solar work?",
@@ -179,7 +179,7 @@ function App() {
     },
     {
       question: "What about subsidy?",
-      answer: "Under the PM Surya Ghar scheme, eligible homes can receive central subsidies up to ₹78,000 for a 3 kW system. A 2-3 BHK house can be powered with a 3-4 kW solar rooftop system."
+      answer: "Under the PM Surya Ghar scheme, eligible homes can receive central subsidies up to ₹78,000 for a 3 kW system. Additionally, states like Chhattisgarh and Odisha are providing upto ₹30,000 in additional subsidies. A 2-3 BHK house can be powered with a 3-4 kW solar rooftop system."
     },
     {
       question: "Does dust really reduce performance?",
